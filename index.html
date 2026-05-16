@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cylee's Homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            padding: 60px 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.3em;
+            opacity: 0.9;
+            margin-top: 15px;
+        }
+
+        .projects-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        .section-title {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .project-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .project-title {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .project-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .project-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            padding: 20px;
+            opacity: 0.8;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 25px;
+            transition: background 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2em; }
+            .projects-section { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>👋 Hi, I'm Cylee</h1>
+            <p class="subtitle">开发者 | 创意工具构建者</p>
+            
+            <div class="social-links">
+                <a href="https://github.com/cylee0909" target="_blank">🔗 GitHub</a>
+                <a href="mailto:cylee@example.com">📧 Email</a>
+            </div>
+        </header>
+
+        <section class="projects-section">
+            <h2 class="section-title">🚀 我的项目</h2>
+            
+            <div class="project-card" onclick="window.open('https://github.com/cylee0909/DoubaoPicFix', '_blank')">
+                <h3 class="project-title">🖼️ 图片拼接工具 (DoubaoPicFix)</h3>
+                <p class="project-description">
+                    一个强大的在线图片拼接工具，支持通过 URL 或本地文件上传图片，
+                    提供灵活的拼接选项和实时预览功能。使用现代化的界面设计，操作简单直观。
+                </p>
+                <a href="https://github.com/cylee0909/DoubaoPicFix" class="project-link" target="_blank">
+                    查看项目 →
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">⭐ 更多项目即将到来...</h3>
+                <p class="project-description">
+                    正在开发更多有趣的项目，敬请期待！
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 Cylee. Built with ❤️ using GitHub Pages</p>
+        </footer>
+    </div>
+</body>
+</html>
